@@ -17,7 +17,7 @@ async function gql(query, variables) {
 
 async function fetchDays() {
   const { user: u } = await gql(`query($login:String!){user(login:$login){createdAt}}`, { login: user });
-  const days = [];
+  const byDate = new Map();
   const now = new Date();
   for (let y = new Date(u.createdAt).getUTCFullYear(); y <= now.getUTCFullYear(); y++) {
     const from = new Date(Date.UTC(y, 0, 1)).toISOString();
@@ -27,8 +27,12 @@ async function fetchDays() {
       { login: user, from, to },
     );
     for (const w of data.user.contributionsCollection.contributionCalendar.weeks)
-      for (const d of w.contributionDays) days.push({ date: d.date, count: d.contributionCount });
+      for (const d of w.contributionDays)
+        if (d.date >= from.slice(0, 10) && d.date <= to.slice(0, 10)) byDate.set(d.date, d.contributionCount);
   }
+  const days = [...byDate].map(([date, count]) => ({ date, count }));
+  for (const y of new Set(days.map((d) => d.date.slice(0, 4))))
+    console.log(y, days.filter((d) => d.date.startsWith(y)).reduce((s, d) => s + d.count, 0));
   return days.sort((a, b) => a.date.localeCompare(b.date));
 }
 
