@@ -1,134 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0e0e11"/><stop offset="1" stop-color="#16161b"/>
-    </linearGradient>
-    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ff8c42"><animate attributeName="stop-color" values="#ff8c42;#ffa25c;#ff8c42" dur="8s" repeatCount="indefinite"/></stop>
-      <stop offset="1" stop-color="#ffa25c"><animate attributeName="stop-color" values="#ffa25c;#ff8c42;#ffa25c" dur="8s" repeatCount="indefinite"/></stop>
-    </linearGradient>
-    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#ff7a29"/><stop offset="1" stop-color="#ffa25c"/>
-    </linearGradient>
-    <radialGradient id="g1"><stop offset="0" stop-color="#ff8c42" stop-opacity="0.10"/><stop offset="1" stop-color="#ff8c42" stop-opacity="0"/></radialGradient>
-    <radialGradient id="g2"><stop offset="0" stop-color="#ffffff" stop-opacity="0.03"/><stop offset="1" stop-color="#ff6b1a" stop-opacity="0"/></radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity="0.035"/></pattern>
-    <clipPath id="clip"><rect width="1200" height="630" rx="20"/></clipPath>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
   <style>
-    .name { font: 800 64px 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; letter-spacing: -1px; }
-    .role { font: 500 22px 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; fill: #e6e6ea; }
-    .meta, .sec, .lbl { font: 15px ui-monospace, 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; fill: #8b8b96; }
-    .sec { font-size: 13px; letter-spacing: 2px; fill: #5f5f6a; }
-    .txt { font: 18px ui-monospace, 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; fill: #b4b4be; }
-    .chip { font: 16px ui-monospace, 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
-    .num { font: 700 42px 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
-    .f { opacity: 0; animation: in .7s ease-out forwards; }
-    @keyframes in { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: none } }
-    .bar { transform-box: fill-box; transform-origin: bottom; animation: grow .6s ease-out both; }
+    text { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif; }
+    .eyebrow { font-size: 17px; font-weight: 600; fill: #ff9f0a; }
+    .hero { font-size: 72px; font-weight: 700; letter-spacing: -2px; fill: #f5f5f7; }
+    .lead { font-size: 26px; font-weight: 500; letter-spacing: -0.3px; fill: #86868b; }
+    .lbl { font-size: 15px; font-weight: 500; fill: #86868b; }
+    .val { font-size: 26px; font-weight: 600; letter-spacing: -0.4px; fill: #f5f5f7; }
+    .sub { font-size: 17px; fill: #a1a1a6; }
+    .num { font-size: 44px; font-weight: 700; letter-spacing: -1px; }
+    .unit { font-size: 22px; font-weight: 600; fill: #86868b; }
+    .link { font-size: 17px; font-weight: 500; fill: #ff9f0a; }
+    .f { opacity: 0; animation: in .9s cubic-bezier(.2,.7,.2,1) forwards; }
+    @keyframes in { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+    .bar { transform-box: fill-box; transform-origin: bottom; animation: grow .7s cubic-bezier(.2,.7,.2,1) both; }
     @keyframes grow { from { transform: scaleY(0) } }
   </style>
-  <g clip-path="url(#clip)">
-    <rect width="1200" height="630" fill="url(#bg)"/>
-    <rect width="1200" height="630" fill="url(#grid)"/>
-    <circle cx="1060" cy="20" r="300" fill="url(#g1)"/>
-    <circle cx="80" cy="640" r="300" fill="url(#g2)"/>
+  <rect x="0.5" y="0.5" width="1199" height="649" rx="28" fill="#0a0a0a" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <g class="f">
+    <text class="eyebrow" x="64" y="88">Bucharest, Romania</text>
+    <text class="link" x="1136" y="88" text-anchor="end">LinkedIn ›</text>
   </g>
-  <rect x="1" y="1" width="1198" height="628" rx="20" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="2"/>
+  <text class="hero f" style="animation-delay:.1s" x="60" y="166">Ayan Selim.</text>
+  <text class="lead f" style="animation-delay:.2s" x="64" y="210">Full-stack developer. Built with Kotlin, Spring Boot and Flutter.</text>
 
-  <text class="meta f" x="64" y="74">// hello, world</text>
-  <text class="name f" style="animation-delay:.1s" x="62" y="140" fill="url(#name)">Ayan Selim</text>
-  <text class="role f" style="animation-delay:.2s" x="64" y="180">Full-stack Developer · Kotlin · Spring Boot · Flutter</text>
-  <text class="meta f" style="animation-delay:.2s" x="1136" y="74" text-anchor="end">Bucharest, RO</text>
-  <text class="meta f" style="animation-delay:.3s;fill:#ff8c42" x="1136" y="102" text-anchor="end">in/ayan-selim-97890b399</text>
-
-  <line x1="64" y1="228" x2="1136" y2="228" stroke="#ffffff" stroke-opacity="0.08"/>
-
-  <text class="sec" x="64" y="272">ABOUT</text>
-  <text class="txt f" style="animation-delay:0.40s" x="64" y="314"><tspan fill="#ff8c42">➜ </tspan>3rd-year CS student @ <tspan fill="#ffffff">ACS UPB</tspan></text>
-  <text class="txt f" style="animation-delay:0.52s" x="64" y="348"><tspan fill="#ff8c42">➜ </tspan>Full-stack developer @ <tspan fill="#ffffff">Animalia</tspan></text>
-  <text class="txt f" style="animation-delay:0.64s" x="64" y="382"><tspan fill="#ff8c42">➜ </tspan>Backend in <tspan fill="#ffffff">Kotlin + Spring Boot</tspan></text>
-  <text class="txt f" style="animation-delay:0.76s" x="64" y="416"><tspan fill="#ff8c42">➜ </tspan>Mobile apps in <tspan fill="#ffffff">Flutter</tspan></text>
-  <text class="sec" x="640" y="272">STACK</text>
-  <g class="f" style="animation-delay:0.50s">
-    <rect x="640.0" y="292" width="86.2" height="34" rx="17" fill="#d0d0d6" fill-opacity="0.05" stroke="#d0d0d6" stroke-opacity="0.18"/>
-    <text x="683.1" y="315" text-anchor="middle" class="chip" fill="#d0d0d6">Kotlin</text>
+  <line x1="64" y1="252" x2="1136" y2="252" stroke="#ffffff" stroke-opacity="0.08"/>
+  <g class="f" style="animation-delay:0.35s">
+    <text class="lbl" x="64" y="300">Studying</text>
+    <text class="val" x="64" y="336">Computer Science</text>
+    <text class="sub" x="64" y="368">ACS UPB · Year 3</text>
+  </g>
+  <g class="f" style="animation-delay:0.45s">
+    <text class="lbl" x="424" y="300">Working at</text>
+    <text class="val" x="424" y="336">Animalia</text>
+    <text class="sub" x="424" y="368">Full-stack developer</text>
   </g>
   <g class="f" style="animation-delay:0.55s">
-    <rect x="736.2" y="292" width="134.7" height="34" rx="17" fill="#d0d0d6" fill-opacity="0.05" stroke="#d0d0d6" stroke-opacity="0.18"/>
-    <text x="803.6" y="315" text-anchor="middle" class="chip" fill="#d0d0d6">Spring Boot</text>
+    <text class="lbl" x="784" y="300">Stack</text>
+    <text class="val" x="784" y="336">Kotlin · Spring Boot</text>
+    <text class="sub" x="784" y="368">Flutter · Dart · Java · PostgreSQL</text>
+    <text class="sub" x="784" y="394">Python · C · JavaScript · Git</text>
   </g>
-  <g class="f" style="animation-delay:0.60s">
-    <rect x="880.9" y="292" width="66.8" height="34" rx="17" fill="#d0d0d6" fill-opacity="0.05" stroke="#d0d0d6" stroke-opacity="0.18"/>
-    <text x="914.3" y="315" text-anchor="middle" class="chip" fill="#d0d0d6">Java</text>
-  </g>
-  <g class="f" style="animation-delay:0.65s">
-    <rect x="957.7" y="292" width="125.0" height="34" rx="17" fill="#d0d0d6" fill-opacity="0.05" stroke="#d0d0d6" stroke-opacity="0.18"/>
-    <text x="1020.2" y="315" text-anchor="middle" class="chip" fill="#d0d0d6">PostgreSQL</text>
-  </g>
-  <g class="f" style="animation-delay:0.70s">
-    <rect x="640.0" y="338" width="95.9" height="34" rx="17" fill="#d0d0d6" fill-opacity="0.05" stroke="#d0d0d6" stroke-opacity="0.18"/>
-    <text x="688.0" y="361" text-anchor="middle" class="chip" fill="#d0d0d6">Flutter</text>
-  </g>
-  <g class="f" style="animation-delay:0.75s">
-    <rect x="745.9" y="338" width="66.8" height="34" rx="17" fill="#d0d0d6" fill-opacity="0.05" stroke="#d0d0d6" stroke-opacity="0.18"/>
-    <text x="779.3" y="361" text-anchor="middle" class="chip" fill="#d0d0d6">Dart</text>
-  </g>
-  <g class="f" style="animation-delay:0.80s">
-    <rect x="822.7" y="338" width="86.2" height="34" rx="17" fill="#d0d0d6" fill-opacity="0.05" stroke="#d0d0d6" stroke-opacity="0.18"/>
-    <text x="865.8" y="361" text-anchor="middle" class="chip" fill="#d0d0d6">Python</text>
-  </g>
-  <g class="f" style="animation-delay:0.85s">
-    <rect x="918.9" y="338" width="37.7" height="34" rx="17" fill="#d0d0d6" fill-opacity="0.05" stroke="#d0d0d6" stroke-opacity="0.18"/>
-    <text x="937.7" y="361" text-anchor="middle" class="chip" fill="#d0d0d6">C</text>
-  </g>
-  <g class="f" style="animation-delay:0.90s">
-    <rect x="966.6" y="338" width="125.0" height="34" rx="17" fill="#d0d0d6" fill-opacity="0.05" stroke="#d0d0d6" stroke-opacity="0.18"/>
-    <text x="1029.1" y="361" text-anchor="middle" class="chip" fill="#d0d0d6">JavaScript</text>
-  </g>
-  <g class="f" style="animation-delay:0.95s">
-    <rect x="640.0" y="384" width="57.1" height="34" rx="17" fill="#d0d0d6" fill-opacity="0.05" stroke="#d0d0d6" stroke-opacity="0.18"/>
-    <text x="668.5" y="407" text-anchor="middle" class="chip" fill="#d0d0d6">Git</text>
-  </g>
-  <g class="f" style="animation-delay:1.00s">
-    <rect x="707.1" y="384" width="76.5" height="34" rx="17" fill="#d0d0d6" fill-opacity="0.05" stroke="#d0d0d6" stroke-opacity="0.18"/>
-    <text x="745.4" y="407" text-anchor="middle" class="chip" fill="#d0d0d6">Linux</text>
-  </g>
-
   <line x1="64" y1="452" x2="1136" y2="452" stroke="#ffffff" stroke-opacity="0.08"/>
 
-  <text class="sec" x="64" y="490">ACTIVITY</text>
-  <text class="num f" style="animation-delay:.8s" x="64" y="540" fill="#ff8c42">459</text>
-  <text class="lbl f" style="animation-delay:.8s" x="64" y="572">contributions</text>
-  <text class="num f" style="animation-delay:.8s" x="250" y="540" fill="#ffffff">7d</text>
-  <text class="lbl f" style="animation-delay:.8s" x="250" y="572">current streak</text>
-  <text class="num f" style="animation-delay:.8s" x="436" y="540" fill="#ffffff">7d</text>
-  <text class="lbl f" style="animation-delay:.8s" x="436" y="572">longest streak</text>
-  <text class="sec" x="640" y="490">LAST 26 WEEKS</text>
-  <rect class="bar" style="animation-delay:0.90s" x="640.0" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:0.93s" x="659.3" y="568.3" width="13.3" height="7.7" rx="3" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:0.96s" x="678.6" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:0.99s" x="697.9" y="570.0" width="13.3" height="6.0" rx="3" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.02s" x="717.2" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.05s" x="736.5" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.08s" x="755.8" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.11s" x="775.2" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.14s" x="794.5" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.17s" x="813.8" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.20s" x="833.1" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.23s" x="852.4" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.26s" x="871.7" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.29s" x="891.0" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.32s" x="910.3" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.35s" x="929.6" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.38s" x="948.9" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.41s" x="968.2" y="559.1" width="13.3" height="16.9" rx="3" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.44s" x="987.5" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.47s" x="1006.8" y="560.2" width="13.3" height="15.8" rx="3" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.50s" x="1026.2" y="564.0" width="13.3" height="12.0" rx="3" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.53s" x="1045.5" y="573.0" width="13.3" height="3.0" rx="3" fill="#26262c"/>
-  <rect class="bar" style="animation-delay:1.56s" x="1064.8" y="564.0" width="13.3" height="12.0" rx="3" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.59s" x="1084.1" y="561.4" width="13.3" height="14.6" rx="3" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.62s" x="1103.4" y="559.1" width="13.3" height="16.9" rx="3" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.65s" x="1122.7" y="514.0" width="13.3" height="62.0" rx="3" fill="url(#bar)"/>
+  <g class="f" style="animation-delay:.6s">
+    <text class="lbl" x="64" y="500">Activity</text>
+    <text class="num" x="64" y="566" fill="#f5f5f7">460<tspan class="unit"></tspan></text>
+  <text class="lbl" x="64" y="596">contributions</text>
+    <text class="num" x="270" y="566" fill="#f5f5f7">7<tspan class="unit"> days</tspan></text>
+  <text class="lbl" x="270" y="596">current streak</text>
+    <text class="num" x="476" y="566" fill="#f5f5f7">7<tspan class="unit"> days</tspan></text>
+  <text class="lbl" x="476" y="596">longest streak</text>
+    <text class="lbl" x="700" y="500">Last 26 weeks</text>
+  </g>
+  <rect class="bar" style="animation-delay:0.800s" x="700.0" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:0.825s" x="717.0" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#ff9f0a"/>
+  <rect class="bar" style="animation-delay:0.850s" x="734.1" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:0.875s" x="751.1" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#ff9f0a"/>
+  <rect class="bar" style="animation-delay:0.900s" x="768.2" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:0.925s" x="785.2" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:0.950s" x="802.2" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:0.975s" x="819.3" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:1.000s" x="836.3" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:1.025s" x="853.3" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:1.050s" x="870.4" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:1.075s" x="887.4" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:1.100s" x="904.5" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:1.125s" x="921.5" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:1.150s" x="938.5" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:1.175s" x="955.6" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:1.200s" x="972.6" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:1.225s" x="989.7" y="570.9" width="10.0" height="19.1" rx="5.0" fill="#ff9f0a"/>
+  <rect class="bar" style="animation-delay:1.250s" x="1006.7" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:1.275s" x="1023.7" y="572.2" width="10.0" height="17.8" rx="5.0" fill="#ff9f0a"/>
+  <rect class="bar" style="animation-delay:1.300s" x="1040.8" y="576.5" width="10.0" height="13.5" rx="5.0" fill="#ff9f0a"/>
+  <rect class="bar" style="animation-delay:1.325s" x="1057.8" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#2c2c2e"/>
+  <rect class="bar" style="animation-delay:1.350s" x="1074.8" y="576.5" width="10.0" height="13.5" rx="5.0" fill="#ff9f0a"/>
+  <rect class="bar" style="animation-delay:1.375s" x="1091.9" y="573.5" width="10.0" height="16.5" rx="5.0" fill="#ff9f0a"/>
+  <rect class="bar" style="animation-delay:1.400s" x="1108.9" y="570.9" width="10.0" height="19.1" rx="5.0" fill="#ff9f0a"/>
+  <rect class="bar" style="animation-delay:1.425s" x="1126.0" y="520.0" width="10.0" height="70.0" rx="5.0" fill="#ff9f0a"/>
 </svg>
