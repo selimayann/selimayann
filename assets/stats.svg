@@ -16,7 +16,7 @@
   <circle cx="34" cy="30" r="8" fill="#f7768e"/><circle cx="60" cy="30" r="8" fill="#e0af68"/><circle cx="86" cy="30" r="8" fill="#9ece6a"/>
   <text class="ttl" x="600" y="37" text-anchor="middle">activity.log</text>
   
-  <text class="num" x="40" y="150" fill="#7aa2f7">447</text>
+  <text class="num" x="40" y="150" fill="#7aa2f7">448</text>
   <text class="lbl" x="40" y="184">total contributions</text>
   
   <text class="num" x="440" y="150" fill="#bb9af7">7d</text>
@@ -26,9 +26,9 @@
   <text class="lbl" x="840" y="184">longest streak</text>
   <text class="ax" x="40" y="232">// contributions per week, last 26 weeks</text>
   <rect class="bar" style="animation-delay:0.00s" x="40.0" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
-  <rect class="bar" style="animation-delay:0.03s" x="83.4" y="392.0" width="35.4" height="8.0" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.03s" x="83.4" y="381.0" width="35.4" height="19.0" rx="4" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:0.06s" x="126.8" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
-  <rect class="bar" style="animation-delay:0.09s" x="170.2" y="392.0" width="35.4" height="8.0" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.09s" x="170.2" y="385.3" width="35.4" height="14.7" rx="4" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:0.12s" x="213.5" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
   <rect class="bar" style="animation-delay:0.15s" x="256.9" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
   <rect class="bar" style="animation-delay:0.18s" x="300.3" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
@@ -42,14 +42,14 @@
   <rect class="bar" style="animation-delay:0.42s" x="647.4" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
   <rect class="bar" style="animation-delay:0.45s" x="690.8" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
   <rect class="bar" style="animation-delay:0.48s" x="734.2" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
-  <rect class="bar" style="animation-delay:0.51s" x="777.5" y="388.4" width="35.4" height="11.6" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.51s" x="777.5" y="358.4" width="35.4" height="41.6" rx="4" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:0.54s" x="820.9" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
-  <rect class="bar" style="animation-delay:0.57s" x="864.3" y="389.9" width="35.4" height="10.1" rx="4" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:0.60s" x="907.7" y="392.0" width="35.4" height="8.0" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.57s" x="864.3" y="361.1" width="35.4" height="38.9" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.60s" x="907.7" y="370.6" width="35.4" height="29.4" rx="4" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:0.63s" x="951.1" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
-  <rect class="bar" style="animation-delay:0.66s" x="994.5" y="392.0" width="35.4" height="8.0" rx="4" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:0.69s" x="1037.8" y="391.3" width="35.4" height="8.7" rx="4" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:0.72s" x="1081.2" y="388.4" width="35.4" height="11.6" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.66s" x="994.5" y="370.6" width="35.4" height="29.4" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.69s" x="1037.8" y="364.0" width="35.4" height="36.0" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.72s" x="1081.2" y="358.4" width="35.4" height="41.6" rx="4" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:0.75s" x="1124.6" y="250.0" width="35.4" height="150.0" rx="4" fill="url(#bar)"/>
   <line x1="40" y1="400.5" x2="1160" y2="400.5" stroke="#3b4261"/>
 </svg>
