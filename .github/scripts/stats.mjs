@@ -56,7 +56,7 @@ export function render({ total, current, longest, weeks }) {
   const chartX = 40, chartW = 1120, chartBottom = 400, chartH = 150;
   const gap = 8, bw = (chartW - gap * (weeks.length - 1)) / weeks.length;
   const bars = weeks.map((v, i) => {
-    const h = v === 0 ? 4 : Math.max(8, (v / max) * chartH);
+    const h = v === 0 ? 4 : Math.max(8, Math.sqrt(v / max) * chartH);
     const x = chartX + i * (bw + gap);
     return `<rect class="bar" style="animation-delay:${(i * 0.03).toFixed(2)}s" x="${x.toFixed(1)}" y="${(chartBottom - h).toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="4" fill="${v === 0 ? "#1f2740" : "url(#bar)"}"/>`;
   }).join("\n  ");
