@@ -1,18 +1,7 @@
 <div align="center">
 
-<img src="./assets/banner.svg" alt="Ayan Selim — Full-stack Developer" width="100%" />
+<a href="https://www.linkedin.com/in/ayan-selim-97890b399/"><img src="./assets/profile.svg" alt="Ayan Selim — Full-stack Developer · CS @ ACS UPB · Kotlin, Spring Boot, Flutter" width="100%" /></a>
 
-<a href="https://www.linkedin.com/in/ayan-selim-97890b399/"><img src="./assets/terminal.svg" alt="whoami: Ayan Selim, CS student @ ACS UPB, full-stack developer @ Animalia" width="100%" /></a>
-
-<img src="./assets/stack.svg" alt="Stack: Kotlin, Spring Boot, Java, PostgreSQL, Flutter, Dart, Python, C, JavaScript, Git, Linux" width="100%" />
-
-<img src="./assets/stats.svg" alt="GitHub activity" width="100%" />
+<a href="https://www.linkedin.com/in/ayan-selim-97890b399/"><img src="https://img.shields.io/badge/LinkedIn-Ayan_Selim-7aa2f7?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=111a33" alt="LinkedIn" /></a>
 
 </div>
-
-<!--
-### 🚀 Featured projects
-| Project | Description | Stack |
-|---|---|---|
-| [**project-name**](https://github.com/selimayann/project-name) | One-line description | Kotlin, Spring |
--->

@@ -1,4 +1,4 @@
-name: Update stats card
+name: Update profile card
 
 on:
   schedule:
@@ -27,5 +27,5 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add assets/stats.svg
-          if git commit -m "Update stats card"; then git push; fi
+          git add assets/profile.svg
+          if git commit -m "Update profile card"; then git push; fi
