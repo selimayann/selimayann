@@ -53,7 +53,8 @@ export function computeStats(days) {
 }
 
 const FONT = "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif";
-const ORANGE = "#ff9f0a";
+const GREEN = "#3fb950";
+const BLUE = "#4493f8";
 
 const SPECS = [
   ["Studying", "Computer Science", ["ACS UPB · Year 3"]],
@@ -70,7 +71,7 @@ export function render({ total, current, longest, weeks }) {
   const bars = weeks.map((v, i) => {
     const h = v === 0 ? bw : Math.max(bw, Math.sqrt(v / max) * chartH);
     const x = chartX + i * (bw + gap);
-    return `<rect class="bar" style="animation-delay:${(0.8 + i * 0.025).toFixed(3)}s" x="${x.toFixed(1)}" y="${(chartBottom - h).toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="${(bw / 2).toFixed(1)}" fill="${v === 0 ? "#21262d" : ORANGE}"/>`;
+    return `<rect class="bar" style="animation-delay:${(0.8 + i * 0.025).toFixed(3)}s" x="${x.toFixed(1)}" y="${(chartBottom - h).toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="${(bw / 2).toFixed(1)}" fill="${v === 0 ? "#21262d" : "url(#bar)"}"/>`;
   }).join("\n  ");
   const specs = SPECS.map(([label, value, sub], i) => {
     const x = 64 + i * 360;
@@ -85,9 +86,14 @@ export function render({ total, current, longest, weeks }) {
   <text class="lbl" x="${x}" y="596">${label}</text>`;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <defs>
+    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#26a641"/><stop offset="1" stop-color="#39d353"/>
+    </linearGradient>
+  </defs>
   <style>
     text { font-family: ${FONT}; }
-    .eyebrow { font-size: 17px; font-weight: 600; fill: ${ORANGE}; }
+    .eyebrow { font-size: 17px; font-weight: 600; fill: ${GREEN}; }
     .hero { font-size: 72px; font-weight: 700; letter-spacing: -2px; fill: #f5f5f7; }
     .lead { font-size: 26px; font-weight: 500; letter-spacing: -0.3px; fill: #86868b; }
     .lbl { font-size: 15px; font-weight: 500; fill: #86868b; }
@@ -95,7 +101,7 @@ export function render({ total, current, longest, weeks }) {
     .sub { font-size: 17px; fill: #a1a1a6; }
     .num { font-size: 44px; font-weight: 700; letter-spacing: -1px; }
     .unit { font-size: 22px; font-weight: 600; fill: #86868b; }
-    .link { font-size: 17px; font-weight: 500; fill: ${ORANGE}; }
+    .link { font-size: 17px; font-weight: 500; fill: ${BLUE}; }
     .f { opacity: 0; animation: in .9s cubic-bezier(.2,.7,.2,1) forwards; }
     @keyframes in { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
     .bar { transform-box: fill-box; transform-origin: bottom; animation: grow .7s cubic-bezier(.2,.7,.2,1) both; }
