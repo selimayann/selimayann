@@ -70,7 +70,7 @@ export function render({ total, current, longest, weeks }) {
   const bars = weeks.map((v, i) => {
     const h = v === 0 ? bw : Math.max(bw, Math.sqrt(v / max) * chartH);
     const x = chartX + i * (bw + gap);
-    return `<rect class="bar" style="animation-delay:${(0.8 + i * 0.025).toFixed(3)}s" x="${x.toFixed(1)}" y="${(chartBottom - h).toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="${(bw / 2).toFixed(1)}" fill="${v === 0 ? "#2c2c2e" : ORANGE}"/>`;
+    return `<rect class="bar" style="animation-delay:${(0.8 + i * 0.025).toFixed(3)}s" x="${x.toFixed(1)}" y="${(chartBottom - h).toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="${(bw / 2).toFixed(1)}" fill="${v === 0 ? "#21262d" : ORANGE}"/>`;
   }).join("\n  ");
   const specs = SPECS.map(([label, value, sub], i) => {
     const x = 64 + i * 360;
@@ -101,7 +101,7 @@ export function render({ total, current, longest, weeks }) {
     .bar { transform-box: fill-box; transform-origin: bottom; animation: grow .7s cubic-bezier(.2,.7,.2,1) both; }
     @keyframes grow { from { transform: scaleY(0) } }
   </style>
-  <rect x="0.5" y="0.5" width="1199" height="649" rx="28" fill="#0a0a0a" stroke="#ffffff" stroke-opacity="0.08"/>
+  <rect x="0.5" y="0.5" width="1199" height="649" rx="28" fill="#0d1117" stroke="#30363d"/>
 
   <g class="f">
     <text class="eyebrow" x="64" y="88">Bucharest, Romania</text>
@@ -110,9 +110,9 @@ export function render({ total, current, longest, weeks }) {
   <text class="hero f" style="animation-delay:.1s" x="60" y="166">Ayan Selim.</text>
   <text class="lead f" style="animation-delay:.2s" x="64" y="210">Full-stack developer. Built with Kotlin, Spring Boot and Flutter.</text>
 
-  <line x1="64" y1="252" x2="1136" y2="252" stroke="#ffffff" stroke-opacity="0.08"/>
+  <line x1="64" y1="252" x2="1136" y2="252" stroke="#21262d"/>
   ${specs}
-  <line x1="64" y1="452" x2="1136" y2="452" stroke="#ffffff" stroke-opacity="0.08"/>
+  <line x1="64" y1="452" x2="1136" y2="452" stroke="#21262d"/>
 
   <g class="f" style="animation-delay:.6s">
     <text class="lbl" x="64" y="500">Activity</text>
