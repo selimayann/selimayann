@@ -6,8 +6,6 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayan-selim-97890b399/)
 
-![Profile views](https://komarev.com/ghpvc/?username=selimayann&color=70a5fd&style=flat-square&label=profile+views)
-
 </div>
 
 ### 👨‍💻 About me
@@ -28,12 +26,10 @@
 ### 📊 GitHub stats
 <div align="center">
   <img height="165" src="https://streak-stats.demolab.com?user=selimayann&theme=tokyonight&hide_border=true" />
-  <br/><br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=selimayann&theme=tokyo-night&hide_border=true&area=true" />
 </div>
 
 <div align="center">
 
-![snake](https://raw.githubusercontent.com/selimayann/selimayann/output/github-snake-dark.svg)
+![3D contributions](./profile-3d-contrib/profile-night-rainbow.svg)
 
 </div>
