@@ -1,4 +1,4 @@
-// Builds assets/profile.svg from the GitHub contribution calendar.
+// Builds assets/card.svg from the GitHub contribution calendar.
 import { writeFileSync, readFileSync, mkdirSync } from "node:fs";
 import { dirname } from "node:path";
 
@@ -166,7 +166,7 @@ export function render({ total, current, longest, weeks }) {
 
 if (process.argv[1] === new URL(import.meta.url).pathname) {
   const days = process.env.MOCK ? JSON.parse(readFileSync(process.env.MOCK, "utf8")) : await fetchDays();
-  const out = process.env.OUT ?? "assets/profile.svg";
+  const out = process.env.OUT ?? "assets/card.svg";
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, render(computeStats(days)));
 }

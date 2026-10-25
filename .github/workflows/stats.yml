@@ -27,5 +27,5 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add assets/profile.svg
+          git add assets/card.svg
           if git commit -m "Update profile card"; then git push; fi
