@@ -56,16 +56,16 @@ const MONO = "ui-monospace, 'SFMono-Regular', Consolas, 'Liberation Mono', monos
 const SANS = "'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif";
 
 const ABOUT = [
-  ["3rd-year CS student @ ", "ACS UPB", "#ffb347"],
-  ["Full-stack developer @ ", "Animalia", "#ff8c42"],
-  ["Backend in ", "Kotlin + Spring Boot", "#ffb347"],
-  ["Mobile apps in ", "Flutter", "#ff8c42"],
+  ["3rd-year CS student @ ", "ACS UPB", "#ffffff"],
+  ["Full-stack developer @ ", "Animalia", "#ffffff"],
+  ["Backend in ", "Kotlin + Spring Boot", "#ffffff"],
+  ["Mobile apps in ", "Flutter", "#ffffff"],
 ];
 
 const STACK = [
-  ["#ff8c42", ["Kotlin", "Spring Boot", "Java", "PostgreSQL"]],
-  ["#ffb347", ["Flutter", "Dart"]],
-  ["#ff6b35", ["Python", "C", "JavaScript", "Git", "Linux"]],
+  ["#d0d0d6", ["Kotlin", "Spring Boot", "Java", "PostgreSQL"]],
+  ["#d0d0d6", ["Flutter", "Dart"]],
+  ["#d0d0d6", ["Python", "C", "JavaScript", "Git", "Linux"]],
 ];
 
 function chips(x0, y0, maxX) {
@@ -76,7 +76,7 @@ function chips(x0, y0, maxX) {
       const w = name.length * 9.7 + 28;
       if (x + w > maxX) { x = x0; y += 46; }
       out.push(`<g class="f" style="animation-delay:${(0.5 + n++ * 0.05).toFixed(2)}s">
-    <rect x="${x.toFixed(1)}" y="${y}" width="${w.toFixed(1)}" height="34" rx="17" fill="${color}" fill-opacity="0.08" stroke="${color}" stroke-opacity="0.35"/>
+    <rect x="${x.toFixed(1)}" y="${y}" width="${w.toFixed(1)}" height="34" rx="17" fill="${color}" fill-opacity="0.05" stroke="${color}" stroke-opacity="0.18"/>
     <text x="${(x + w / 2).toFixed(1)}" y="${y + 23}" text-anchor="middle" class="chip" fill="${color}">${name}</text>
   </g>`);
       x += w + 10;
@@ -92,7 +92,7 @@ export function render({ total, current, longest, weeks }) {
   const bars = weeks.map((v, i) => {
     const h = v === 0 ? 3 : Math.max(6, Math.sqrt(v / max) * chartH);
     const x = chartX + i * (bw + gap);
-    return `<rect class="bar" style="animation-delay:${(0.9 + i * 0.03).toFixed(2)}s" x="${x.toFixed(1)}" y="${(chartBottom - h).toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="3" fill="${v === 0 ? "#2e2016" : "url(#bar)"}"/>`;
+    return `<rect class="bar" style="animation-delay:${(0.9 + i * 0.03).toFixed(2)}s" x="${x.toFixed(1)}" y="${(chartBottom - h).toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="3" fill="${v === 0 ? "#26262c" : "url(#bar)"}"/>`;
   }).join("\n  ");
   const about = ABOUT.map(([pre, hl, color], i) =>
     `<text class="txt f" style="animation-delay:${(0.4 + i * 0.12).toFixed(2)}s" x="64" y="${314 + i * 34}"><tspan fill="#ff8c42">➜ </tspan>${pre}<tspan fill="${color}">${hl}</tspan></text>`,
@@ -104,26 +104,26 @@ export function render({ total, current, longest, weeks }) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#120c08"/><stop offset="1" stop-color="#1f140c"/>
+      <stop offset="0" stop-color="#0e0e11"/><stop offset="1" stop-color="#16161b"/>
     </linearGradient>
     <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ff8c42"><animate attributeName="stop-color" values="#ff8c42;#ffb347;#ff6b35;#ff8c42" dur="8s" repeatCount="indefinite"/></stop>
-      <stop offset="1" stop-color="#ffb347"><animate attributeName="stop-color" values="#ffb347;#ff6b35;#ff8c42;#ffb347" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="0" stop-color="#ff8c42"><animate attributeName="stop-color" values="#ff8c42;#ffa25c;#ff8c42" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#ffa25c"><animate attributeName="stop-color" values="#ffa25c;#ff8c42;#ffa25c" dur="8s" repeatCount="indefinite"/></stop>
     </linearGradient>
     <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#ff6b1a"/><stop offset="1" stop-color="#ffb347"/>
+      <stop offset="0" stop-color="#ff7a29"/><stop offset="1" stop-color="#ffa25c"/>
     </linearGradient>
-    <radialGradient id="g1"><stop offset="0" stop-color="#ff8c42" stop-opacity="0.25"/><stop offset="1" stop-color="#ff8c42" stop-opacity="0"/></radialGradient>
-    <radialGradient id="g2"><stop offset="0" stop-color="#ff6b1a" stop-opacity="0.18"/><stop offset="1" stop-color="#ff6b1a" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g1"><stop offset="0" stop-color="#ff8c42" stop-opacity="0.10"/><stop offset="1" stop-color="#ff8c42" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2"><stop offset="0" stop-color="#ffffff" stop-opacity="0.03"/><stop offset="1" stop-color="#ff6b1a" stop-opacity="0"/></radialGradient>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity="0.035"/></pattern>
     <clipPath id="clip"><rect width="1200" height="630" rx="20"/></clipPath>
   </defs>
   <style>
     .name { font: 800 64px ${SANS}; letter-spacing: -1px; }
-    .role { font: 500 22px ${SANS}; fill: #f3e2d3; }
-    .meta, .sec, .lbl { font: 15px ${MONO}; fill: #a8907c; }
-    .sec { font-size: 13px; letter-spacing: 2px; fill: #7a6352; }
-    .txt { font: 18px ${MONO}; fill: #ddc8b6; }
+    .role { font: 500 22px ${SANS}; fill: #e6e6ea; }
+    .meta, .sec, .lbl { font: 15px ${MONO}; fill: #8b8b96; }
+    .sec { font-size: 13px; letter-spacing: 2px; fill: #5f5f6a; }
+    .txt { font: 18px ${MONO}; fill: #b4b4be; }
     .chip { font: 16px ${MONO}; }
     .num { font: 700 42px ${SANS}; }
     .f { opacity: 0; animation: in .7s ease-out forwards; }
@@ -137,7 +137,7 @@ export function render({ total, current, longest, weeks }) {
     <circle cx="1060" cy="20" r="300" fill="url(#g1)"/>
     <circle cx="80" cy="640" r="300" fill="url(#g2)"/>
   </g>
-  <rect x="1" y="1" width="1198" height="628" rx="20" fill="none" stroke="#ff8c42" stroke-opacity="0.22" stroke-width="2"/>
+  <rect x="1" y="1" width="1198" height="628" rx="20" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="2"/>
 
   <text class="meta f" x="64" y="74">// hello, world</text>
   <text class="name f" style="animation-delay:.1s" x="62" y="140" fill="url(#name)">Ayan Selim</text>
@@ -145,19 +145,19 @@ export function render({ total, current, longest, weeks }) {
   <text class="meta f" style="animation-delay:.2s" x="1136" y="74" text-anchor="end">Bucharest, RO</text>
   <text class="meta f" style="animation-delay:.3s;fill:#ff8c42" x="1136" y="102" text-anchor="end">in/ayan-selim-97890b399</text>
 
-  <line x1="64" y1="228" x2="1136" y2="228" stroke="#ff8c42" stroke-opacity="0.15"/>
+  <line x1="64" y1="228" x2="1136" y2="228" stroke="#ffffff" stroke-opacity="0.08"/>
 
   <text class="sec" x="64" y="272">ABOUT</text>
   ${about}
   <text class="sec" x="640" y="272">STACK</text>
   ${chips(640, 292, 1136)}
 
-  <line x1="64" y1="452" x2="1136" y2="452" stroke="#ff8c42" stroke-opacity="0.15"/>
+  <line x1="64" y1="452" x2="1136" y2="452" stroke="#ffffff" stroke-opacity="0.08"/>
 
   <text class="sec" x="64" y="490">ACTIVITY</text>
   ${stat(64, total, "contributions", "#ff8c42")}
-  ${stat(250, `${current}d`, "current streak", "#ffb347")}
-  ${stat(436, `${longest}d`, "longest streak", "#ff6b35")}
+  ${stat(250, `${current}d`, "current streak", "#ffffff")}
+  ${stat(436, `${longest}d`, "longest streak", "#ffffff")}
   <text class="sec" x="640" y="490">LAST ${weeks.length} WEEKS</text>
   ${bars}
 </svg>
