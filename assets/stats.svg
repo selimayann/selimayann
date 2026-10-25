@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450">
+  <defs>
+    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#7aa2f7"/><stop offset="1" stop-color="#bb9af7"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .num { font: 700 48px 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+    .lbl, .ax { font: 18px ui-monospace, 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; fill: #7f89b5; }
+    .ttl { font: 18px ui-monospace, 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; fill: #a9b1d6; }
+    .bar { transform-box: fill-box; transform-origin: bottom; animation: grow .6s ease-out both; }
+    @keyframes grow { from { transform: scaleY(0) } }
+  </style>
+  <rect x="1" y="1" width="1198" height="448" rx="18" fill="#0b1020" stroke="#7aa2f7" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M1 58V19A18 18 0 0 1 19 1H1181A18 18 0 0 1 1199 19V58Z" fill="#111a33"/>
+  <circle cx="34" cy="30" r="8" fill="#f7768e"/><circle cx="60" cy="30" r="8" fill="#e0af68"/><circle cx="86" cy="30" r="8" fill="#9ece6a"/>
+  <text class="ttl" x="600" y="37" text-anchor="middle">activity.log</text>
+  
+  <text class="num" x="40" y="150" fill="#7aa2f7">215</text>
+  <text class="lbl" x="40" y="184">total contributions</text>
+  
+  <text class="num" x="440" y="150" fill="#bb9af7">21d</text>
+  <text class="lbl" x="440" y="184">current streak</text>
+  
+  <text class="num" x="840" y="150" fill="#7dcfff">21d</text>
+  <text class="lbl" x="840" y="184">longest streak</text>
+  <text class="ax" x="40" y="232">// contributions per week, last 26 weeks</text>
+  <rect class="bar" style="animation-delay:0.00s" x="40.0" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.03s" x="83.4" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.06s" x="126.8" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.09s" x="170.2" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.12s" x="213.5" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.15s" x="256.9" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.18s" x="300.3" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.21s" x="343.7" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.24s" x="387.1" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.27s" x="430.5" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.30s" x="473.8" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.33s" x="517.2" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.36s" x="560.6" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.39s" x="604.0" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.42s" x="647.4" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.45s" x="690.8" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.48s" x="734.2" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.51s" x="777.5" y="396.0" width="35.4" height="4.0" rx="4" fill="#1f2740"/>
+  <rect class="bar" style="animation-delay:0.54s" x="820.9" y="380.3" width="35.4" height="19.7" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.57s" x="864.3" y="253.9" width="35.4" height="146.1" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.60s" x="907.7" y="273.7" width="35.4" height="126.3" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.63s" x="951.1" y="340.8" width="35.4" height="59.2" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.66s" x="994.5" y="340.8" width="35.4" height="59.2" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.69s" x="1037.8" y="250.0" width="35.4" height="150.0" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.72s" x="1081.2" y="253.9" width="35.4" height="146.1" rx="4" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.75s" x="1124.6" y="257.9" width="35.4" height="142.1" rx="4" fill="url(#bar)"/>
+  <line x1="40" y1="400.5" x2="1160" y2="400.5" stroke="#3b4261"/>
+</svg>

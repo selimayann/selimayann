@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350">
+  <style>
+    .t { font: 22px ui-monospace, 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; fill: #c0caf5; white-space: pre; }
+    .n { fill: #3b4261 } .kw { fill: #bb9af7 } .f { fill: #7aa2f7 } .s { fill: #9ece6a } .k { fill: #7dcfff } .o { fill: #a9b1d6 }
+    .l { opacity: 0; animation: in .5s ease-out forwards; }
+    @keyframes in { from { opacity: 0; transform: translateX(-6px) } to { opacity: 1; transform: none } }
+    .l1{animation-delay:.2s}.l2{animation-delay:.45s}.l3{animation-delay:.7s}.l4{animation-delay:.95s}.l5{animation-delay:1.2s}
+  </style>
+  <rect x="1" y="1" width="1198" height="348" rx="18" fill="#0b1020" stroke="#7aa2f7" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M1 58V19A18 18 0 0 1 19 1H1181A18 18 0 0 1 1199 19V58Z" fill="#111a33"/>
+  <circle cx="34" cy="30" r="8" fill="#f7768e"/><circle cx="60" cy="30" r="8" fill="#e0af68"/><circle cx="86" cy="30" r="8" fill="#9ece6a"/>
+  <text class="t o" x="600" y="37" text-anchor="middle" font-size="18">Stack.kt</text>
+
+  <text class="t" x="40" y="112"><tspan class="n">1  </tspan><tspan class="kw">val</tspan> stack = <tspan class="f">mapOf</tspan>(</text>
+  <text class="t l l1" x="40" y="152"><tspan class="n">2  </tspan>    <tspan class="s">"backend"</tspan> <tspan class="kw">to</tspan> <tspan class="f">listOf</tspan>(<tspan class="k">Kotlin</tspan>, <tspan class="k">SpringBoot</tspan>, <tspan class="k">Java</tspan>, <tspan class="k">PostgreSQL</tspan>),</text>
+  <text class="t l l2" x="40" y="192"><tspan class="n">3  </tspan>    <tspan class="s">"mobile"</tspan>  <tspan class="kw">to</tspan> <tspan class="f">listOf</tspan>(<tspan class="k">Flutter</tspan>, <tspan class="k">Dart</tspan>),</text>
+  <text class="t l l3" x="40" y="232"><tspan class="n">4  </tspan>    <tspan class="s">"also"</tspan>    <tspan class="kw">to</tspan> <tspan class="f">listOf</tspan>(<tspan class="k">Python</tspan>, <tspan class="k">C</tspan>, <tspan class="k">JavaScript</tspan>),</text>
+  <text class="t l l4" x="40" y="272"><tspan class="n">5  </tspan>    <tspan class="s">"tools"</tspan>   <tspan class="kw">to</tspan> <tspan class="f">listOf</tspan>(<tspan class="k">Git</tspan>, <tspan class="k">Linux</tspan>),</text>
+  <text class="t l l5" x="40" y="312"><tspan class="n">6  </tspan>)</text>
+</svg>
