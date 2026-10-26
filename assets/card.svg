@@ -50,11 +50,11 @@
 
   <g class="f" style="animation-delay:.6s">
     <text class="lbl" x="64" y="500">Activity</text>
-    <text class="num" x="64" y="566" fill="#f5f5f7">463<tspan class="unit"></tspan></text>
+    <text class="num" x="64" y="566" fill="#f5f5f7">466<tspan class="unit"></tspan></text>
   <text class="lbl" x="64" y="596">contributions</text>
-    <text class="num" x="270" y="566" fill="#f5f5f7">7<tspan class="unit"> days</tspan></text>
+    <text class="num" x="270" y="566" fill="#f5f5f7">8<tspan class="unit"> days</tspan></text>
   <text class="lbl" x="270" y="596">current streak</text>
-    <text class="num" x="476" y="566" fill="#f5f5f7">7<tspan class="unit"> days</tspan></text>
+    <text class="num" x="476" y="566" fill="#f5f5f7">8<tspan class="unit"> days</tspan></text>
   <text class="lbl" x="476" y="596">longest streak</text>
     <text class="lbl" x="700" y="500">Last 26 weeks</text>
   </g>
@@ -75,13 +75,13 @@
   <rect class="bar" style="animation-delay:1.150s" x="938.5" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#21262d"/>
   <rect class="bar" style="animation-delay:1.175s" x="955.6" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#21262d"/>
   <rect class="bar" style="animation-delay:1.200s" x="972.6" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#21262d"/>
-  <rect class="bar" style="animation-delay:1.225s" x="989.7" y="570.8" width="10.0" height="19.2" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.225s" x="989.7" y="570.9" width="10.0" height="19.1" rx="5.0" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:1.250s" x="1006.7" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#21262d"/>
-  <rect class="bar" style="animation-delay:1.275s" x="1023.7" y="572.0" width="10.0" height="18.0" rx="5.0" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.300s" x="1040.8" y="576.4" width="10.0" height="13.6" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.275s" x="1023.7" y="572.1" width="10.0" height="17.9" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.300s" x="1040.8" y="576.5" width="10.0" height="13.5" rx="5.0" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:1.325s" x="1057.8" y="580.0" width="10.0" height="10.0" rx="5.0" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.350s" x="1074.8" y="576.4" width="10.0" height="13.6" rx="5.0" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.375s" x="1091.9" y="574.3" width="10.0" height="15.7" rx="5.0" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.400s" x="1108.9" y="567.8" width="10.0" height="22.2" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.350s" x="1074.8" y="576.5" width="10.0" height="13.5" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.375s" x="1091.9" y="574.4" width="10.0" height="15.6" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.400s" x="1108.9" y="567.9" width="10.0" height="22.1" rx="5.0" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:1.425s" x="1126.0" y="520.0" width="10.0" height="70.0" rx="5.0" fill="url(#bar)"/>
 </svg>
