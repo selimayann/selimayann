@@ -50,7 +50,7 @@
 
   <g class="f" style="animation-delay:.6s">
     <text class="lbl" x="64" y="500">Activity</text>
-    <text class="num" x="64" y="566" fill="#f5f5f7">478<tspan class="unit"></tspan></text>
+    <text class="num" x="64" y="566" fill="#f5f5f7">479<tspan class="unit"></tspan></text>
   <text class="lbl" x="64" y="596">contributions</text>
     <text class="num" x="270" y="566" fill="#f5f5f7">9<tspan class="unit"> days</tspan></text>
   <text class="lbl" x="270" y="596">current streak</text>
@@ -81,7 +81,7 @@
   <rect class="bar" style="animation-delay:1.300s" x="1040.8" y="579.8" width="10.0" height="10.2" rx="5.0" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:1.325s" x="1057.8" y="580.0" width="10.0" height="10.0" rx="5.0" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:1.350s" x="1074.8" y="575.1" width="10.0" height="14.9" rx="5.0" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.375s" x="1091.9" y="573.2" width="10.0" height="16.8" rx="5.0" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.400s" x="1108.9" y="569.6" width="10.0" height="20.4" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.375s" x="1091.9" y="573.3" width="10.0" height="16.7" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.400s" x="1108.9" y="569.7" width="10.0" height="20.3" rx="5.0" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:1.425s" x="1126.0" y="520.0" width="10.0" height="70.0" rx="5.0" fill="url(#bar)"/>
 </svg>
