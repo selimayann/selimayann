@@ -59,7 +59,7 @@
     <text class="lbl" x="700" y="500">Last 26 weeks</text>
   </g>
   <rect class="bar" style="animation-delay:0.800s" x="700.0" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#21262d"/>
-  <rect class="bar" style="animation-delay:0.825s" x="717.0" y="579.6" width="10.0" height="10.4" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:0.825s" x="717.0" y="580.0" width="10.0" height="10.0" rx="5.0" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:0.850s" x="734.1" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#21262d"/>
   <rect class="bar" style="animation-delay:0.875s" x="751.1" y="580.0" width="10.0" height="10.0" rx="5.0" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:0.900s" x="768.2" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#21262d"/>
@@ -74,14 +74,14 @@
   <rect class="bar" style="animation-delay:1.125s" x="921.5" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#21262d"/>
   <rect class="bar" style="animation-delay:1.150s" x="938.5" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#21262d"/>
   <rect class="bar" style="animation-delay:1.175s" x="955.6" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#21262d"/>
-  <rect class="bar" style="animation-delay:1.200s" x="972.6" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#21262d"/>
-  <rect class="bar" style="animation-delay:1.225s" x="989.7" y="567.3" width="10.0" height="22.7" rx="5.0" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.250s" x="1006.7" y="580.0" width="10.0" height="10.0" rx="5.0" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.275s" x="1023.7" y="565.0" width="10.0" height="25.0" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.200s" x="972.6" y="573.5" width="10.0" height="16.5" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.225s" x="989.7" y="578.3" width="10.0" height="11.7" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.250s" x="1006.7" y="576.9" width="10.0" height="13.1" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.275s" x="1023.7" y="570.2" width="10.0" height="19.8" rx="5.0" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:1.300s" x="1040.8" y="580.0" width="10.0" height="10.0" rx="5.0" fill="#21262d"/>
-  <rect class="bar" style="animation-delay:1.325s" x="1057.8" y="577.7" width="10.0" height="12.3" rx="5.0" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.350s" x="1074.8" y="570.3" width="10.0" height="19.7" rx="5.0" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.375s" x="1091.9" y="567.3" width="10.0" height="22.7" rx="5.0" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.400s" x="1108.9" y="524.8" width="10.0" height="65.2" rx="5.0" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.425s" x="1126.0" y="520.0" width="10.0" height="70.0" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.325s" x="1057.8" y="575.7" width="10.0" height="14.3" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.350s" x="1074.8" y="575.1" width="10.0" height="14.9" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.375s" x="1091.9" y="569.8" width="10.0" height="20.2" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.400s" x="1108.9" y="520.0" width="10.0" height="70.0" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.425s" x="1126.0" y="541.3" width="10.0" height="48.7" rx="5.0" fill="url(#bar)"/>
 </svg>
