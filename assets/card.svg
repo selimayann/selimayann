@@ -50,9 +50,9 @@
 
   <g class="f" style="animation-delay:.6s">
     <text class="lbl" x="64" y="500">Activity</text>
-    <text class="num" x="64" y="566" fill="#f5f5f7">740<tspan class="unit"></tspan></text>
+    <text class="num" x="64" y="566" fill="#f5f5f7">821<tspan class="unit"></tspan></text>
   <text class="lbl" x="64" y="596">contributions</text>
-    <text class="num" x="270" y="566" fill="#f5f5f7">3<tspan class="unit"> days</tspan></text>
+    <text class="num" x="270" y="566" fill="#f5f5f7">4<tspan class="unit"> days</tspan></text>
   <text class="lbl" x="270" y="596">current streak</text>
     <text class="num" x="476" y="566" fill="#f5f5f7">12<tspan class="unit"> days</tspan></text>
   <text class="lbl" x="476" y="596">longest streak</text>
@@ -83,5 +83,5 @@
   <rect class="bar" style="animation-delay:1.350s" x="1074.8" y="569.8" width="10.0" height="20.2" rx="5.0" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:1.375s" x="1091.9" y="520.0" width="10.0" height="70.0" rx="5.0" fill="url(#bar)"/>
   <rect class="bar" style="animation-delay:1.400s" x="1108.9" y="539.7" width="10.0" height="50.3" rx="5.0" fill="url(#bar)"/>
-  <rect class="bar" style="animation-delay:1.425s" x="1126.0" y="535.5" width="10.0" height="54.5" rx="5.0" fill="url(#bar)"/>
+  <rect class="bar" style="animation-delay:1.425s" x="1126.0" y="524.0" width="10.0" height="66.0" rx="5.0" fill="url(#bar)"/>
 </svg>
